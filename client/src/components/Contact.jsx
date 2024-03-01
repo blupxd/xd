@@ -26,7 +26,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     try {
-      const res = axios.post('https://matijastefanovicbackend.vercel.app', {
+      const res = axios.post('/', {
         name: formData.firstName,
         lastname: formData.lastName,
         email: formData.email,

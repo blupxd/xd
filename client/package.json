@@ -1,6 +1,7 @@
 {
   "name": "matija",
   "version": "0.1.0",
+  "proxy": "https://matijastefanovicbackend.vercel.app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
