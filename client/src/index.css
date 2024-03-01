@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navigacija::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(190 24 93);
+  transition: width 0.3s;
+}
+
+.navigacija:hover::after {
+  width: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.animirano{
+  animation-name: animacija;
+  animation-duration: .75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacija {
+  0% {transform: translateY(-2px)}
+  33% {transform: translateY(0px)}
+  100% {transform: translateY(-2px)}
+}
