@@ -70,7 +70,6 @@ const offerCard = (title, icon, description) => (
     <FontAwesomeIcon
       className="text-6xl text-amber-300 font-bold mb-2"
       icon={icon}
-      whileHover={{ scale: 1.1 }}
     />
     <p className="text-sm md:text-base lg:text-base w-4/5 md:w-48">{description}</p>
   </div>

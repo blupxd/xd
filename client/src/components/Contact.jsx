@@ -2,11 +2,35 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { closeForm } from '../actions/contactAction';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 
 const Contact = () => {
   const dispatch = useDispatch();
   const open = useSelector((state) => state.contactForm.open);
+
+  const successNotification = () => {
+    toast.success('Message has been sent! I will reply soon :)', {
+      position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+  const errorNotification = () => {
+    toast.error('Message not sent!', {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -32,7 +56,9 @@ const Contact = () => {
         email: formData.email,
         text: formData.message
       })
+      successNotification()
     } catch (error) {
+      errorNotification()
       console.log(error)
     }
     setFormData({
@@ -45,6 +71,7 @@ const Contact = () => {
   };
   return (
     <AnimatePresence>
+      <ToastContainer />
       {open && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -60,6 +87,7 @@ const Contact = () => {
           }}
           className='fixed inset-0 flex justify-center items-center bg-black/30'
         >
+          
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
