@@ -23,10 +23,10 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = axios.post('/', {
+      const res = await axios.post('https://matijastefanovicbackend.vercel.app/', {
         name: formData.firstName,
         lastname: formData.lastName,
         email: formData.email,
