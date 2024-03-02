@@ -78,7 +78,7 @@ const AboutMe = () => {
                 <a href='https://github.com/blupxd' target='_blank' rel='noopener noreferrer' className='text-white hover:text-pink-500 transition-all duration-300 '>
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer' className='text-white hover:text-pink-500 transition-all duration-300 '>
+                <a href='https://www.linkedin.com/in/matija-stefanovic-92a9781aa/' target='_blank' rel='noopener noreferrer' className='text-white hover:text-pink-500 transition-all duration-300 '>
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </div>
