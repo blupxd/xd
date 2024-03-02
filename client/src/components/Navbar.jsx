@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { openForm } from '../actions/contactAction'
+import logo from '../images/logo.png'
 
 const Navbar = () => {
 
@@ -19,10 +20,12 @@ const Navbar = () => {
     <div style={{
       zIndex: 100
     }} className='py-6 bg-white border-b-[2px] border-pink-700 sticky top-0 hidden lg:flex lg:flex-row justify-between px-24 items-center'>
-      <div className='bg-pink-700 px-4 border-b-[5px] border-pink-400 py-2 text-xl font-semibold text-white '>
+      <div className='mx-4'>
             <button onClick={() => {
               scrollToSection('home')
-              }}>Matija's Portfolio</button>
+              }}>
+                <img src={logo} alt="logo" width="60px"/>
+              </button>
         </div>
       <div className="lg:flex lg:flex-inline lg:gap-2 flex flex-col">
         <ul className='flex flex-col lg:text-lg lg:relative absolute md:text-md gap-y-12 lg:flex-row lg:gap-12 text-pink-700 font-semibold'>

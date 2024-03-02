@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { openForm } from '../actions/contactAction'
+import logo from '../images/logo.png'
 
 const MobileNavbar = () => {
     const [activate, setActivate] = useState(false)
@@ -19,11 +20,13 @@ const MobileNavbar = () => {
   return (
     <div className='lg:hidden flex flex-col fixed z-50 w-screen'>
         <div className='bg-white text-pink-600 border-b-[2px] border-pink-700 text-4xl transition-all duration-300 hover:text-pink-700 px-4 py-4 flex items-center justify-between'>
-          <div className='bg-pink-700 px-4 border-b-[5px] border-pink-400 py-2 text-xl font-semibold text-white '>
-              <button onClick={() => {
-                scrollToSection('home')
-                }}>Matija's Portfolio</button>
-            </div>
+        <div className='mx-4'>
+            <button onClick={() => {
+              scrollToSection('home')
+              }}>
+                <img src={logo} alt="logo" width="60px"/>
+              </button>
+        </div>
             {activate ? <FontAwesomeIcon onClick={toggleMenu} className='cursor-pointer' icon={faClose}/>
                 : <FontAwesomeIcon onClick={toggleMenu} className='cursor-pointer' icon={faBars}/>}
         </div>
