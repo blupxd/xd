@@ -21,7 +21,6 @@ const MobileNavbar = () => {
         <div className='bg-white text-pink-600 border-b-[2px] border-pink-700 text-4xl transition-all duration-300 hover:text-pink-700 px-4 py-4 flex items-center justify-between'>
           <div className='bg-pink-700 px-4 border-b-[5px] border-pink-400 py-2 text-xl font-semibold text-white '>
               <button onClick={() => {
-                toggleMenu()
                 scrollToSection('home')
                 }}>Matija's Portfolio</button>
             </div>
