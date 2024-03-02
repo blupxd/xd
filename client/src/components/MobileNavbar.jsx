@@ -20,7 +20,7 @@ const MobileNavbar = () => {
   return (
     <div className='lg:hidden flex flex-col fixed z-50 w-screen'>
         <div className='bg-white text-pink-600 border-b-[2px] border-pink-700 text-4xl transition-all duration-300 hover:text-pink-700 px-4 py-4 flex items-center justify-between'>
-        <div className='mx-4'>
+        <div className='my-4'>
             <button onClick={() => {
               scrollToSection('home')
               }}>

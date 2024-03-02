@@ -18,7 +18,7 @@ const Navbar = () => {
     <div style={{
       zIndex: 100
     }} className='py-6 bg-white border-b-[2px] border-pink-700 sticky top-0 hidden lg:flex lg:flex-row justify-between px-24 items-center'>
-      <div className='mx-4'>
+      <div className='my-4'>
             <button onClick={() => {
               scrollToSection('home')
               }}>
