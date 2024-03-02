@@ -84,7 +84,7 @@ const AboutMe = () => {
               </div>
               <a href='mailto:matijabusiness@gmail.com' className='text-white/30 text-sm flex items-center gap-2'>
                 <FontAwesomeIcon icon={faEnvelope} />
-                matijabusiness@gmail.com
+                matijastefanovicbusiness@gmail.com
               </a>
             </motion.div>
           </div>
