@@ -82,7 +82,7 @@ const AboutMe = () => {
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </div>
-              <a href='mailto:matijabusiness@gmail.com' className='text-white/30 text-sm flex items-center gap-2'>
+              <a href='mailto:matijastefanovicbusiness@gmail.com' className='text-white/30 text-sm flex items-center gap-2'>
                 <FontAwesomeIcon icon={faEnvelope} />
                 matijastefanovicbusiness@gmail.com
               </a>

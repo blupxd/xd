@@ -1,5 +1,3 @@
-import { faHandshake, faHomeAlt, faProjectDiagram, faUser } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { openForm } from '../actions/contactAction'
@@ -31,22 +29,22 @@ const Navbar = () => {
         <ul className='flex flex-col lg:text-lg lg:relative absolute md:text-md gap-y-12 lg:flex-row lg:gap-12 text-pink-700 font-semibold'>
           <li className='navigacija'>
           <button onClick={() => scrollToSection('home')}>
-            <FontAwesomeIcon icon={faHomeAlt} /> Home
+            Home
           </button>
           </li>
           <li className='navigacija'>
             <button onClick={() => scrollToSection('offer')}>
-              <FontAwesomeIcon icon={faHandshake} /> Offer
+              Offer
             </button>
           </li>
           <li className='navigacija'>
             <button onClick={() => scrollToSection('projects')}>
-              <FontAwesomeIcon icon={faProjectDiagram} /> Projects
+              Projects
             </button>
           </li>
           <li className='navigacija'>
             <button onClick={() => scrollToSection('about-me')}>
-              <FontAwesomeIcon icon={faUser} /> About me
+              About me
             </button>
           </li>
         </ul>

@@ -1,4 +1,4 @@
-import { faBars, faClose, faHandshake, faHomeAlt, faProjectDiagram, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
@@ -24,7 +24,7 @@ const MobileNavbar = () => {
             <button onClick={() => {
               scrollToSection('home')
               }}>
-                <img src={logo} alt="logo" width="60px"/>
+                <img src={logo} alt="logo" width="40px"/>
               </button>
         </div>
             {activate ? <FontAwesomeIcon onClick={toggleMenu} className='cursor-pointer' icon={faClose}/>
@@ -37,12 +37,12 @@ const MobileNavbar = () => {
               toggleMenu()
               scrollToSection('home')
               }}>
-              Home <FontAwesomeIcon icon={faHomeAlt} />
+              Home
             </button>
           </li>
           <li className='navigacija'>
             <button onClick={() => scrollToSection('offer')}>
-              Offer <FontAwesomeIcon icon={faHandshake} />
+              Offer
             </button>
           </li>
             <li className='navigacija'>
@@ -50,7 +50,7 @@ const MobileNavbar = () => {
               toggleMenu()
               scrollToSection('projects')
               }}>
-                Projects <FontAwesomeIcon icon={faProjectDiagram} />
+                Projects
               </button>
             </li>
             <li className='navigacija'>
@@ -58,7 +58,7 @@ const MobileNavbar = () => {
               toggleMenu()
               scrollToSection('about-me')
               }}>
-                About me <FontAwesomeIcon icon={faUser} />
+                About me
               </button>
             </li>
             <li>
