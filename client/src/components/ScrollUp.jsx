@@ -29,7 +29,7 @@ const ScrollUp = () => {
       {showButton && (
         <div className='fixed bottom-12 right-8 lg:right-24 text-white z-50'>
           <button onClick={() => scrollToSection('home')}
-            className='bg-yellow-500 w-12 h-12 rounded-full text-3xl'>
+            className='text-yellow-500 text-3xl'>
             <FontAwesomeIcon className='animirano' icon={faAngleDoubleUp} />
           </button>
         </div>
