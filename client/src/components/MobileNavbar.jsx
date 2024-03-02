@@ -41,7 +41,9 @@ const MobileNavbar = () => {
             </button>
           </li>
           <li className='navigacija'>
-            <button onClick={() => scrollToSection('offer')}>
+            <button onClick={() => {
+              toggleMenu()
+              scrollToSection('offer')}}>
               Offer
             </button>
           </li>
