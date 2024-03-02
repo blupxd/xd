@@ -52,7 +52,7 @@ const Offers = () => {
           animate={mainControls2}
           transition={{ duration: 0.7, delay: 0.25 }}
           ref={ref2}
-          className="grid grid-cols-1 md:grid-cols-2 p-4 lg:grid-cols-2 gap-x-48 text-center text-white"
+          className="grid grid-cols-1 md:grid-cols-2 p-4 gap-y-24 lg:grid-cols-2 gap-x-48 text-center text-white"
         >
           {offerCard("ReactJS", faReact, "I'm offering to build you an astonishing website with ReactJS. I have 2+ years of experience with ReactJS.")}
           {offerCard("NodeJS", faNodeJs, "Will provide, if needed, a server for your website. I have 2+ years of experience with NodeJS.")}
