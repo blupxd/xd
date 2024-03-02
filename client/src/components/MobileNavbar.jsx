@@ -23,7 +23,7 @@ const MobileNavbar = () => {
             <button onClick={() => {
               scrollToSection('home')
               }}>
-                <img src={logo} alt="logo" height="40px"/>
+                <img src={logo} alt="logo" width="40px"/>
               </button>
             {activate ? <FontAwesomeIcon onClick={toggleMenu} className='cursor-pointer' icon={faClose}/>
                 : <FontAwesomeIcon onClick={toggleMenu} className='cursor-pointer' icon={faBars}/>}
